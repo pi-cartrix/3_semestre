@@ -1,0 +1,8 @@
+php_flag display_errors Off
+php_value error_reporting 22527
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^$ public/ [L]
+    RewriteRule (.*) public/$1 [L]
+</IfModule>
