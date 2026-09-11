@@ -8,9 +8,9 @@
     <?= csrf_field() ?>
 
     <div class="field field-wide">
-        <label>Veiculo *</label>
+        <label>Veículo *</label>
         <select name="vehicle_id" required>
-            <option value="">Selecione um veiculo...</option>
+            <option value="">Selecione um veículo...</option>
             <?php foreach ($vehicles as $vehicle): ?>
                 <option value="<?= e((string) $vehicle->_id) ?>" <?= old('vehicle_id', $selectedVehicleId) === (string) $vehicle->_id ? 'selected' : '' ?>>
                     <?= e((string) $vehicle->placa) ?> — <?= e((string) $vehicle->marca) ?> <?= e((string) $vehicle->modelo) ?>
@@ -35,7 +35,7 @@
     </div>
 
     <div class="field field-wide">
-        <label>Localizacao do dano *</label>
+        <label>Localização do dano *</label>
         <select name="localizacao">
             <option value="">Selecione...</option>
             <option value="dianteira" <?= old('localizacao') === 'dianteira' ? 'selected' : '' ?>>Dianteira</option>
@@ -49,12 +49,12 @@
     </div>
 
     <div class="field field-wide">
-        <label>Descricao do dano *</label>
+        <label>Descrição do dano *</label>
         <textarea name="descricao" rows="4" required><?= e(old('descricao')) ?></textarea>
     </div>
 
     <div class="field field-wide">
-        <label>Observacoes</label>
+        <label>Observações</label>
         <textarea name="observacoes" rows="3"><?= e(old('observacoes')) ?></textarea>
     </div>
 

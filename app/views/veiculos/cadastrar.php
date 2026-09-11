@@ -1,5 +1,5 @@
 <div class="page-head">
-    <h1>Cadastrar veiculo</h1>
+    <h1>Cadastrar veículo</h1>
     <span class="spacer"></span>
     <a href="<?= base_url('/veiculos') ?>" class="btn btn-light">Voltar</a>
 </div>
@@ -29,7 +29,7 @@
 
     <div class="field">
         <label>Chassi *</label>
-        <input type="text" name="chassi" value="<?= e(old('chassi')) ?>" placeholder="Minimo 11 caracteres" required>
+        <input type="text" name="chassi" value="<?= e(old('chassi')) ?>" placeholder="Mínimo 11 caracteres" required>
     </div>
 
     <div class="field">
@@ -47,7 +47,7 @@
     </div>
 
     <div class="field field-wide">
-        <button type="submit" class="btn btn-primary">Salvar veiculo</button>
+        <button type="submit" class="btn btn-primary">Salvar veículo</button>
     </div>
 </form>
 

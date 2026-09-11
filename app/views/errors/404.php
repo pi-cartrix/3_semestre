@@ -12,8 +12,8 @@
 <body style="display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:center;">
     <div>
         <div style="font-size:6rem;font-weight:700;color:#fff;line-height:1;">404</div>
-        <p style="font-size:1.125rem;color:#7e7e7e;margin:1rem 0 2rem;">Pagina nao encontrada.</p>
-        <a href="<?= base_url('/') ?>" class="btn btn-primary">Voltar ao inicio</a>
+        <p style="font-size:1.125rem;color:#7e7e7e;margin:1rem 0 2rem;">Página não encontrada.</p>
+        <a href="<?= base_url('/') ?>" class="btn btn-primary">Voltar ao início</a>
     </div>
 </body>
 </html>

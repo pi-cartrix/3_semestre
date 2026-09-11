@@ -15,7 +15,7 @@
 </form>
 
 <?php if (empty($vehicles)): ?>
-    <p class="muted">Nenhum veiculo encontrado.</p>
+    <p class="muted">Nenhum veículo encontrado.</p>
 <?php else: ?>
     <div style="overflow-x: auto;">
         <table class="table">
@@ -26,7 +26,7 @@
                     <th>Modelo</th>
                     <th>Quilometragem</th>
                     <th>Status</th>
-                    <th>Acoes</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
@@ -42,7 +42,7 @@
                         <td class="actions">
                             <a href="<?= base_url('/veiculos/' . (string) $vehicle->_id) ?>" class="btn btn-sm btn-light">Ver</a>
                             <a href="<?= base_url('/veiculos/' . (string) $vehicle->_id . '/editar') ?>" class="btn btn-sm btn-light">Editar</a>
-                            <a href="<?= base_url('/veiculos/' . (string) $vehicle->_id . '/revisoes') ?>" class="btn btn-sm btn-light">Revisoes</a>
+                            <a href="<?= base_url('/veiculos/' . (string) $vehicle->_id . '/revisoes') ?>" class="btn btn-sm btn-light">Revisões</a>
                             <a href="<?= base_url('/veiculos/' . (string) $vehicle->_id . '/danos') ?>" class="btn btn-sm btn-light">Danos</a>
                         </td>
                     </tr>

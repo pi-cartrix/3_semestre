@@ -1,7 +1,7 @@
 <div class="page-head">
-    <h1>Frota de veiculos</h1>
+    <h1>Frota de veículos</h1>
     <span class="spacer"></span>
-    <a href="<?= base_url('/veiculos/criar') ?>" class="btn btn-primary">Cadastrar veiculo</a>
+    <a href="<?= base_url('/veiculos/criar') ?>" class="btn btn-primary">Cadastrar veículo</a>
 </div>
 
 <?php if (!empty($statusCounts)): ?>

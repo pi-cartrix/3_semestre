@@ -1,5 +1,5 @@
 <div class="page-head">
-    <h1>Frota de veiculos</h1>
+    <h1>Frota de veículos</h1>
 </div>
 
 <?php

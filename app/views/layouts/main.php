@@ -22,9 +22,7 @@
             <?php if (is_logged_in()): ?>
                 <span class="nav-sep"></span>
                 <a href="<?= base_url('/veiculos') ?>">Frota</a>
-                <a href="<?= base_url('/veiculos/criar') ?>">Cadastrar</a>
-                <a href="<?= base_url('/revisoes/criar') ?>">Revisao</a>
-                <a href="<?= base_url('/danos/criar') ?>">Dano</a>
+                <a href="<?= base_url('/revisoes/criar') ?>">Revisões</a>
                 <span class="spacer"></span>
                 <span class="user"><?= e($_SESSION['user']['name'] ?? '') ?></span>
                 <form method="POST" action="<?= base_url('/logout') ?>" class="inline">

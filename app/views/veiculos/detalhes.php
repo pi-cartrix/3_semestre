@@ -5,13 +5,13 @@ use App\Models\Dano;
     <h1><?= e((string) $vehicle->marca) ?> <?= e((string) $vehicle->modelo) ?></h1>
     <span class="spacer"></span>
     <a href="<?= base_url('/veiculos/' . (string) $vehicle->_id . '/editar') ?>" class="btn btn-primary">Editar</a>
-    <a href="<?= base_url('/revisoes/criar?vehicle_id=' . (string) $vehicle->_id) ?>" class="btn btn-light">Registrar revisao</a>
+    <a href="<?= base_url('/revisoes/criar?vehicle_id=' . (string) $vehicle->_id) ?>" class="btn btn-light">Registrar revisão</a>
     <a href="<?= base_url('/danos/criar?vehicle_id=' . (string) $vehicle->_id) ?>" class="btn btn-light">Registrar dano</a>
 </div>
 
 <div class="card-grid">
     <div class="card">
-        <h3>Dados do veiculo</h3>
+        <h3>Dados do veículo</h3>
         <dl class="detail">
             <dt>Placa</dt><dd><?= e((string) $vehicle->placa) ?></dd>
             <dt>Chassi</dt><dd><?= e((string) $vehicle->chassi) ?></dd>
@@ -53,11 +53,11 @@ use App\Models\Dano;
 
 <?php if (!empty($damages)): ?>
     <div class="card">
-        <h3>Ultimos danos</h3>
+        <h3>Últimos danos</h3>
         <div style="overflow-x: auto;">
             <table class="table">
                 <thead>
-                    <tr><th>Data</th><th>Gravidade</th><th>Descricao</th></tr>
+                    <tr><th>Data</th><th>Gravidade</th><th>Descrição</th></tr>
                 </thead>
                 <tbody>
                     <?php foreach ($damages as $dano): ?>
@@ -72,5 +72,5 @@ use App\Models\Dano;
         </div>
     </div>
 <?php else: ?>
-    <p class="muted">Nenhum dano registrado no historico.</p>
+    <p class="muted">Nenhum dano registrado no histórico.</p>
 <?php endif; ?>

@@ -15,7 +15,7 @@
         </form>
 
         <p>
-            Ainda nao tem uma conta? <a href="<?= base_url('/register') ?>">Cadastre-se</a>
+            Ainda não tem uma conta? <a href="<?= base_url('/register') ?>">Cadastre-se</a>
         </p>
     </div>
 </div>

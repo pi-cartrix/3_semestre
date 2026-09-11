@@ -1,5 +1,5 @@
 <div class="page-head">
-    <h1>Registrar revisao</h1>
+    <h1>Registrar revisão</h1>
     <span class="spacer"></span>
     <a href="<?= base_url('/veiculos') ?>" class="btn btn-light">Voltar</a>
 </div>
@@ -8,9 +8,9 @@
     <?= csrf_field() ?>
 
     <div class="field field-wide">
-        <label>Veiculo *</label>
+        <label>Veículo *</label>
         <select name="vehicle_id" required>
-            <option value="">Selecione um veiculo...</option>
+            <option value="">Selecione um veículo...</option>
             <?php foreach ($vehicles as $vehicle): ?>
                 <option value="<?= e((string) $vehicle->_id) ?>" <?= old('vehicle_id', $selectedVehicleId) === (string) $vehicle->_id ? 'selected' : '' ?>>
                     <?= e((string) $vehicle->placa) ?> — <?= e((string) $vehicle->marca) ?> <?= e((string) $vehicle->modelo) ?>
@@ -20,7 +20,7 @@
     </div>
 
     <div class="field">
-        <label>Data da revisao *</label>
+        <label>Data da revisão *</label>
         <input type="date" name="data_revisao" value="<?= e(old('data_revisao', date('Y-m-d'))) ?>" required>
     </div>
 
@@ -30,7 +30,7 @@
     </div>
 
     <div class="field">
-        <label>Tipo de revisao *</label>
+        <label>Tipo de revisão *</label>
         <select name="tipo">
             <option value="">Selecione...</option>
             <?php foreach ($types as $key => $label): ?>
@@ -45,8 +45,8 @@
     </div>
 
     <div class="field field-wide">
-        <label>Pecas substituidas</label>
-        <input type="text" name="pecas_substituidas" value="<?= e(old('pecas_substituidas')) ?>" placeholder="Ex.: pastilhas de freio, oleo 5W30...">
+        <label>Peças substituídas</label>
+        <input type="text" name="pecas_substituidas" value="<?= e(old('pecas_substituidas')) ?>" placeholder="Ex.: pastilhas de freio, óleo 5W30...">
     </div>
 
     <div class="field">
@@ -55,11 +55,11 @@
     </div>
 
     <div class="field field-wide">
-        <label>Descricao *</label>
+        <label>Descrição *</label>
         <textarea name="descricao" rows="4" required><?= e(old('descricao')) ?></textarea>
     </div>
 
     <div class="field field-wide">
-        <button type="submit" class="btn btn-primary">Registrar revisao</button>
+        <button type="submit" class="btn btn-primary">Registrar revisão</button>
     </div>
 </form>

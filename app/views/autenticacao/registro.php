@@ -1,5 +1,5 @@
 <div class="auth-box">
-    <h1>Cadastro de usuario</h1>
+    <h1>Cadastro de usuário</h1>
 
     <div class="card">
         <form method="POST" action="<?= base_url('/register') ?>">
@@ -24,7 +24,7 @@
         </form>
 
         <p>
-            Ja possui uma conta? <a href="<?= base_url('/login') ?>">Entrar</a>
+            Já possui uma conta? <a href="<?= base_url('/login') ?>">Entrar</a>
         </p>
     </div>
 </div>

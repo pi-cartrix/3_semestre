@@ -1,5 +1,5 @@
 <div class="page-head">
-    <h1>Editar veiculo</h1>
+    <h1>Editar veículo</h1>
     <span class="spacer"></span>
     <a href="<?= base_url('/veiculos') ?>" class="btn btn-light">Voltar</a>
 </div>
@@ -46,7 +46,7 @@
     </div>
 
     <div class="field field-wide">
-        <button type="submit" class="btn btn-primary">Salvar alteracoes</button>
+        <button type="submit" class="btn btn-primary">Salvar alterações</button>
     </div>
 </form>
 

@@ -2,7 +2,7 @@
 use App\Models\Revisao;
 ?>
 <div class="page-head">
-    <h1>Historico de revisoes</h1>
+    <h1>Histórico de revisões</h1>
     <span class="spacer"></span>
     <a href="<?= base_url('/veiculos') ?>" class="btn btn-light">Voltar</a>
 </div>
@@ -20,8 +20,8 @@ use App\Models\Revisao;
 
 <?php if (empty($maintenances)): ?>
     <div class="empty-state">
-        <p>Nenhuma revisao registrada para este veiculo.</p>
-        <a href="<?= base_url('/revisoes/criar?vehicle_id=' . (string) $vehicle->_id) ?>" class="btn btn-primary">Registrar primeira revisao</a>
+        <p>Nenhuma revisão registrada para este veículo.</p>
+        <a href="<?= base_url('/revisoes/criar?vehicle_id=' . (string) $vehicle->_id) ?>" class="btn btn-primary">Registrar primeira revisão</a>
     </div>
 <?php else: ?>
     <div style="overflow-x: auto;">
@@ -31,8 +31,8 @@ use App\Models\Revisao;
                     <th>Data</th>
                     <th>Tipo</th>
                     <th>Quilometragem</th>
-                    <th>Descricao</th>
-                    <th>Pecas</th>
+                    <th>Descrição</th>
+                    <th>Peças</th>
                     <th>Valor</th>
                     <th>Responsavel</th>
                 </tr>
@@ -52,7 +52,7 @@ use App\Models\Revisao;
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="5"><strong>Total investido em revisoes</strong></td>
+                    <td colspan="5"><strong>Total investido em revisões</strong></td>
                     <td colspan="2"><strong>R$ <?= e(format_money($total)) ?></strong></td>
                 </tr>
             </tfoot>

@@ -2,7 +2,7 @@
 use App\Models\Dano;
 ?>
 <div class="page-head">
-    <h1>Danos do veiculo</h1>
+    <h1>Danos do veículo</h1>
     <span class="spacer"></span>
     <a href="<?= base_url('/veiculos/' . (string) $vehicle->_id) ?>" class="btn btn-light">Voltar</a>
     <a href="<?= base_url('/danos/criar?vehicle_id=' . (string) $vehicle->_id) ?>" class="btn btn-primary">Registrar dano</a>
@@ -20,7 +20,7 @@ use App\Models\Dano;
 
 <?php if (empty($damages)): ?>
     <div class="empty-state">
-        <p>Nenhum dano registrado para este veiculo.</p>
+        <p>Nenhum dano registrado para este veículo.</p>
         <a href="<?= base_url('/danos/criar?vehicle_id=' . (string) $vehicle->_id) ?>" class="btn btn-primary">Registrar primeiro dano</a>
     </div>
 <?php else: ?>
@@ -30,9 +30,9 @@ use App\Models\Dano;
                 <tr>
                     <th>Data</th>
                     <th>Gravidade</th>
-                    <th>Localizacao</th>
-                    <th>Descricao</th>
-                    <th>Observacoes</th>
+                    <th>Localização</th>
+                    <th>Descrição</th>
+                    <th>Observações</th>
                 </tr>
             </thead>
             <tbody>
